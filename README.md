@@ -112,3 +112,9 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+
+## Observations
+
+* The data file must be in your working directory.
+
+* The image files will be generated in your working directory.

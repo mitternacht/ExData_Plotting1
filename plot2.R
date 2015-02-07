@@ -1,0 +1,15 @@
+data <- read.table("./household_power_consumption.txt", sep=";", header=TRUE);
+data$Date <- as.Date(data$Date, "%d/%m/%Y");
+date1 <- as.Date("2007-02-01", "%Y-%m-%d");
+date2 <- as.Date("2007-02-02", "%Y-%m-%d");
+data <- subset(data, data$Date == date1 | data$Date == date2);
+data_plot2_y <- data$Global_active_power;
+data_plot2_y <- subset(data_plot2_y, data_plot2_y != "?");
+data_plot2_y <- factor(data_plot2_y);
+data_plot2_y <- as.numeric(as.character(data_plot2_y));
+data_plot2_x <- paste(data$Date, data$Time);
+data_plot2_x <- as.POSIXlt(as.character(data_plot2_x), format = "%Y-%m-%d %H:%M:%S");
+Sys.setlocale("LC_TIME", "English");
+png(file="plot2.png",width=480,height=480);
+plot(data_plot2_x, data_plot2_y, type="l", ylab="Global Active Power (kilowatts)", xlab="");
+dev.off();
