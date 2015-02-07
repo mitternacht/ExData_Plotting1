@@ -113,8 +113,16 @@ The four plots that you will need to construct are shown below.
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
 
-## Observations
+## Instructions
 
-* The data file must be in your working directory.
+After downloading the <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb] dataset:
 
-* The image files will be generated in your working directory.
+* Define your working directory via the <b>setwd</b> command. Ex.: setwd("C:\\Temp")
+
+* Extract the downloaded file to your working directory.
+
+* Move the plot1, plot2, plot3 and plot4 scripts to your working directory.
+
+* Execute the scripts via <b>source</b> command. Ex.: source("plot1.R")
+
+Each one of the scripts will produce a PNG file with the same name of the script.
