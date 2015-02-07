@@ -117,7 +117,7 @@ The four plots that you will need to construct are shown below.
 
 After downloading the <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb] dataset:
 
-* Define your working directory via the <b>setwd</b> command. Ex.: setwd("C:\\Temp")
+* Define your working directory via the <b>setwd</b> command. Ex.: setwd("C:\\\Temp")
 
 * Extract the downloaded file to your working directory.
 
